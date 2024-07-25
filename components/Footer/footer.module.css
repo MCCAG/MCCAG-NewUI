@@ -1,0 +1,6 @@
+.footer {
+    background-color: var(--mantine-color-blue-light);
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
