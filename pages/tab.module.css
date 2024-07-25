@@ -1,6 +1,6 @@
 .tab {
     position: relative;
-    background-color: var(--mantine-color-blue-light);
+    background-color: rgba(83, 146, 239, 0.3);
     color: var(--mantine-color-blue-filled);
     font-size: 18px;
     font-weight: bold;
