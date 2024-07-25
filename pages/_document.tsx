@@ -4,13 +4,15 @@ import { ColorSchemeScript } from '@mantine/core';
 export default function Document() {
   return (
     <Html lang="en">
-      <Head>
-        <ColorSchemeScript />
-      </Head>
-      <body>
+        <Head>
+
+            <link rel="stylesheet" href="font.css" />
+            <ColorSchemeScript />
+        </Head>
+        <body>
         <Main />
         <NextScript />
-      </body>
+        </body>
     </Html>
   );
 }
