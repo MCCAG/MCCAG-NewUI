@@ -1,7 +1,7 @@
 .tab {
     position: relative;
-    background-color: rgba(83, 146, 239, 0.3);
-    color: var(--mantine-color-blue-filled);
+    background-color: var(--mantine-color-blue-light);
+    color: var(--mantine-color-blue-text);
     font-size: 18px;
     font-weight: bold;
 
@@ -12,7 +12,6 @@
     &[data-active] {
         z-index: 1;
         background-color: light-dark(var(--mantine-color-white), var(--mantine-color-dark-6));
-        border-radius: 4px 4px 0 0;
 
         @mixin hover {
             background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-5));

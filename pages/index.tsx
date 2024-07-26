@@ -66,10 +66,9 @@ export default function HomePage() {
                           shadow="sm"
                           padding="lg"
                           radius="lg"
-                          style={{ backgroundColor: 'rgba(83, 146, 239, 0.3)', height: 40 }}
-                          withBorder>
+                          style={{ backgroundColor: 'var(--mantine-color-blue-light)', height: 40 }}>
                             <Center h={40}>
-                                <Text style={{ color: 'var(--mantine-color-blue-filled)', fontSize: 18, fontWeight: 'bold' }}>
+                                <Text style={{ color: 'var(--mantine-color-blue-text)', fontSize: 18, fontWeight: 'bold' }}>
                                     用户作品
                                 </Text>
                             </Center>
