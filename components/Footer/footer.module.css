@@ -10,7 +10,9 @@
 .footer {
     background-color: var(--mantine-color-blue-light);
     color: var(--mantine-color-dark-2);
-    height: 100px;
+    min-height: 100px;
+    max-height: fit-content;
+    height: auto;
     /* position: fixed; */
     /* bottom: 0; */
     /* padding-bottom: 0; */

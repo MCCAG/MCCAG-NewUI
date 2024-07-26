@@ -3,22 +3,28 @@ import Link from '@/components/Link/Link';
 import classes from './footer.module.css';
 
 export function Footer() {
+    // @ts-ignore
     return (
         <div className={classes.footer}>
             <Container className={classes.inner}>
                 <Stack>
                     <Center>
                         <Group>
-                            <Text>
-                                制作：
-                                <Link href="#">Keishi</Link>&nbsp;&nbsp;
-                                <Link href="#">SerinaNya</Link>&nbsp;&nbsp;
-                                <Link href="https://github.com/zrll12">zrll</Link>&nbsp;&nbsp;
-                                <Link href="https://github.com/SnowballXueQiu">SnowballXueQiu</Link>&nbsp;&nbsp;|&nbsp;&nbsp;
-                                <a>灵感来源：噪音回放</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                                赞助：
-                                <Link href="#">DongYue</Link>
-                            </Text>
+                            <div style={{
+                                marginTop: 15,
+                            }}>
+                                <Text>
+                                    制作：
+                                    <Link href="https://github.com/Natsusomekeishi">Keishi</Link>&nbsp;&nbsp;
+                                    <Link href="https://github.com/SerinaNya">SerinaNya</Link>&nbsp;&nbsp;
+                                    <Link href="https://github.com/zrll12">zrll</Link>&nbsp;&nbsp;
+                                    <Link href="https://github.com/SnowballXueQiu" >SnowballXueQiu</Link>&nbsp;&nbsp;|&nbsp;&nbsp;
+                                    <a>灵感来源：噪音回放</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                                    赞助：
+                                    <Link href="#">DongYue</Link>
+                                </Text>
+                            </div>
+
                         </Group>
                     </Center>
 
