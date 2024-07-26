@@ -10,7 +10,7 @@ export function OfficialIdSkin() {
             <TextInput
               variant="filled"
               size="md"
-              placeholder="请输入正版 ID"
+              placeholder="正版 ID"
               radius="md"
               style={{
                     boxShadow: '0 0 0 2px #5392EF',
@@ -30,7 +30,8 @@ export function OfficialIdSkin() {
               style={{
                     boxShadow: '0 0 0 2px #5392EF',
                 }}
-              src="https://picsum.photos/290/290"
+              // src="https://picsum.photos/290/290"
+              fallbackSrc="/square.jpg"
             />
             <Group>
                 <Button variant="subtle">发布作品</Button>

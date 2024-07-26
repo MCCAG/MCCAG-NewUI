@@ -1,6 +1,7 @@
 .link {
     text-decoration: none;
-    color: light-dark(var(--mantine-color-dark-6), var(--mantine-color-white));
+    color: var(--mantine-color-dark-2);
+    /*color: light-dark(var(--mantine-color-dark-6), var(--mantine-color-white));*/
 
     @mixin hover {
         color: var(--mantine-color-blue-filled);

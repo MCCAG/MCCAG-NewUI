@@ -2,6 +2,8 @@ import { Box, Card, Center, Container, SimpleGrid, Space, Stack, Tabs } from '@m
 import React from 'react';
 import { OfficialIdSkin } from '@/components/OfficialIdSkin/OfficialIdSkin';
 import tabsStyle from './tab.module.css';
+import {Footer} from "@/components/Footer/Footer";
+import SkinServerSkin from "@/components/SkinServerSkin/SkinServerSkin";
 
 export default function HomePage() {
     return (
@@ -30,7 +32,7 @@ export default function HomePage() {
                                     </Tabs.Panel>
 
                                     <Tabs.Panel value="skin_site">
-                                        Messages tab content
+                                        <SkinServerSkin />
                                     </Tabs.Panel>
 
                                     <Tabs.Panel value="upload_skin">
@@ -42,6 +44,8 @@ export default function HomePage() {
                         </Card.Section>
                     </Card>
                 </SimpleGrid>
+
+                <Footer />
             </Center>
 
         </Container>
