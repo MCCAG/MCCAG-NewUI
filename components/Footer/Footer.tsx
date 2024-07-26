@@ -1,4 +1,4 @@
-import {Center, Container, Group, Space, Stack, Text} from '@mantine/core';
+import { Center, Container, Group, Stack, Text } from '@mantine/core';
 import Link from '@/components/Link/Link';
 import classes from './footer.module.css';
 

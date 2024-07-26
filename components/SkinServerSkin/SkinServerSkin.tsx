@@ -1,4 +1,4 @@
-import { Button, Group, Image, Space, Stack, TextInput } from '@mantine/core';
+import { Button, Group, Image, Stack, TextInput } from '@mantine/core';
 
 export default function SkinServerSkin() {
     return (

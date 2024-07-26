@@ -1,4 +1,4 @@
-import {ActionIcon, Menu} from '@mantine/core';
+import { ActionIcon, Menu } from '@mantine/core';
 import { IconLanguage } from '@tabler/icons-react';
 
 export function LanguageToggle() {

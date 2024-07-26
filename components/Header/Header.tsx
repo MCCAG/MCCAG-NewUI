@@ -1,6 +1,5 @@
-import { ActionIcon, Burger, Button, Container, Group, Image, Menu, Title } from '@mantine/core';
-import React, { useState } from 'react';
-import { IconChevronDown, IconChevronUp } from '@tabler/icons-react';
+import { Burger, Container, Group, Image, Menu, Title } from '@mantine/core';
+import React from 'react';
 import { useDisclosure } from '@mantine/hooks';
 import classes from './header.module.css';
 import { ColorSchemeToggle } from '@/components/ColorSchemeToggle/ColorSchemeToggle';

@@ -1,16 +1,13 @@
 import '@mantine/core/styles.css';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
-import { AppShell, Burger, Group, Image, MantineProvider, Title } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
+import { AppShell, MantineProvider } from '@mantine/core';
 import React from 'react';
 import { theme } from '@/theme';
-import { ColorSchemeToggle } from '@/components/ColorSchemeToggle/ColorSchemeToggle';
 import { Footer } from '@/components/Footer/Footer';
 import Header from '@/components/Header/Header';
 
 export default function App({ Component, pageProps }: AppProps) {
-    const [opened, { toggle }] = useDisclosure();
     return (
         <MantineProvider theme={theme}>
             <Head>
@@ -21,7 +18,7 @@ export default function App({ Component, pageProps }: AppProps) {
                 />
                 <link rel="shortcut icon" href="/favicon.png" />
             </Head>
-            <AppShell header={{ height: 60 }} footer={{height: 100}}>
+            <AppShell header={{ height: 60 }} footer={{ height: 100 }}>
                 <AppShell.Header>
                     <Header />
                 </AppShell.Header>

@@ -10,17 +10,17 @@ import {
     Text,
     ScrollArea,
     Group,
-    Button
+    Button,
 } from '@mantine/core';
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { OfficialIdSkin } from '@/components/OfficialIdSkin/OfficialIdSkin';
 import tabsStyle from './tab.module.css';
 import SkinServerSkin from '@/components/SkinServerSkin/SkinServerSkin';
 import UploadedSkin from '@/components/UploadedSkin/UploadedSkin';
-import {ImageCard} from "@/components/ImageCard/ImageCard";
+import { ImageCard } from '@/components/ImageCard/ImageCard';
 
 export default function HomePage() {
-    let [showLeast, setShowLeast] = useState(true);
+    const [showLeast, setShowLeast] = useState(true);
 
     return (
         <Container maw={850}>
@@ -77,23 +77,29 @@ export default function HomePage() {
                             <Space h={30} />
                             <Center>
                                 <Stack>
-                                    <ScrollArea h={"auto"}>
+                                    <ScrollArea h="auto">
                                         <SimpleGrid cols={2}>
-                                            <ImageCard url={"https://picsum.photos/130/130"} />
-                                            <ImageCard url={"https://picsum.photos/130/130"} />
-                                            <ImageCard url={"https://picsum.photos/130/130"} />
-                                            <ImageCard url={"https://picsum.photos/130/130"} />
-                                            <ImageCard url={"https://picsum.photos/130/130"} />
-                                            <ImageCard url={"https://picsum.photos/130/130"} />
+                                            <ImageCard url="https://picsum.photos/130/130" />
+                                            <ImageCard url="https://picsum.photos/130/130" />
+                                            <ImageCard url="https://picsum.photos/130/130" />
+                                            <ImageCard url="https://picsum.photos/130/130" />
+                                            <ImageCard url="https://picsum.photos/130/130" />
+                                            <ImageCard url="https://picsum.photos/130/130" />
                                         </SimpleGrid>
                                     </ScrollArea>
-                                    <Group justify={"center"}>
-                                        <Button variant={showLeast ? "filled": "subtle"} onClick={() => {
+                                    <Group justify="center">
+                                        <Button
+                                          variant={showLeast ? 'filled' : 'subtle'}
+                                          onClick={() => {
                                             setShowLeast(true);
-                                        }}>最新</Button>
-                                        <Button variant={showLeast ? "subtle": "filled"} onClick={() => {
+                                        }}>最新
+                                        </Button>
+                                        <Button
+                                          variant={showLeast ? 'subtle' : 'filled'}
+                                          onClick={() => {
                                             setShowLeast(false);
-                                        }}>最热</Button>
+                                        }}>最热
+                                        </Button>
                                         <Button>换一批</Button>
                                     </Group>
                                 </Stack>
