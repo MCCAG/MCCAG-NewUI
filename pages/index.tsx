@@ -1,16 +1,16 @@
 import {
     Box,
+    Button,
     Card,
     Center,
     Container,
+    Group,
+    ScrollArea,
     SimpleGrid,
     Space,
     Stack,
     Tabs,
     Text,
-    ScrollArea,
-    Group,
-    Button,
 } from '@mantine/core';
 import React, { useState } from 'react';
 import { OfficialIdSkin } from '@/components/OfficialIdSkin/OfficialIdSkin';
