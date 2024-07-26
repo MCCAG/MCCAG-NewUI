@@ -4,6 +4,7 @@ import { OfficialIdSkin } from '@/components/OfficialIdSkin/OfficialIdSkin';
 import tabsStyle from './tab.module.css';
 import {Footer} from "@/components/Footer/Footer";
 import SkinServerSkin from "@/components/SkinServerSkin/SkinServerSkin";
+import UploadedSkin from "@/components/UploadedSkin/UploadedSkin";
 
 export default function HomePage() {
     return (
@@ -36,7 +37,7 @@ export default function HomePage() {
                                     </Tabs.Panel>
 
                                     <Tabs.Panel value="upload_skin">
-                                        Settings tab content
+                                        <UploadedSkin />
                                     </Tabs.Panel>
                                     <Space h={40} />
                                 </Box>

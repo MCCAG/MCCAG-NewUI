@@ -1,34 +1,32 @@
-import {Button, Group, Image, Space, Stack, TextInput} from "@mantine/core";
+import { Button, Group, Image, Space, Stack, TextInput } from '@mantine/core';
 
 export default function SkinServerSkin() {
     return (
         <Stack
-            align="center"
-            justify="center"
-            gap="md"
+          align="center"
+          justify="center"
+          gap="md"
         >
             <Group gap={20}>
                 <TextInput
-                    variant="filled"
-                    size="md"
-                    placeholder="玩家 ID"
-                    radius="md"
-                    style={{
+                  size="md"
+                  placeholder="玩家 ID"
+                  radius="md"
+                  style={{
                         boxShadow: '0 0 0 2px #5392EF',
                         borderRadius: '8px',
                     }}
-                    w={135}
+                  w={135}
                 />
                 <TextInput
-                    variant="filled"
-                    size="md"
-                    placeholder="皮肤站链接"
-                    radius="md"
-                    style={{
+                  size="md"
+                  placeholder="皮肤站链接"
+                  radius="md"
+                  style={{
                         boxShadow: '0 0 0 2px #5392EF',
                         borderRadius: '8px',
                     }}
-                    w={135}
+                  w={135}
                 />
             </Group>
 
@@ -38,14 +36,14 @@ export default function SkinServerSkin() {
                 <Button variant="subtle">下载</Button>
             </Group>
             <Image
-                radius="md"
-                h={290}
-                w={290}
-                style={{
+              radius="md"
+              h={290}
+              w={290}
+              style={{
                     boxShadow: '0 0 0 2px #5392EF',
                 }}
                 // src="https://picsum.photos/290/290"
-                fallbackSrc="/square.jpg"
+              fallbackSrc="/square.jpg"
             />
             <Group>
                 <Button variant="subtle">发布作品</Button>
@@ -53,5 +51,5 @@ export default function SkinServerSkin() {
                 <Button variant="subtle">上传背景</Button>
             </Group>
         </Stack>
-    )
+    );
 }
