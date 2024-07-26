@@ -3,7 +3,6 @@ import { Button, Stack, TextInput, Group, Image } from '@mantine/core';
 export function OfficialIdSkin() {
     return (
         <Stack
-          bg="var(--mantine-color-body)"
           align="center"
           justify="center"
           gap="md"
