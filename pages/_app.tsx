@@ -21,16 +21,21 @@ export default function App({ Component, pageProps }: AppProps) {
                 />
                 <link rel="shortcut icon" href="/favicon.png" />
             </Head>
-            <AppShell header={{ height: 60 }}>
+            <AppShell header={{ height: 60 }} footer={{height: 100}}>
                 <AppShell.Header>
                     <Header />
                 </AppShell.Header>
 
                 <AppShell.Main>
                     <Component {...pageProps} />
-                    <Footer />
                 </AppShell.Main>
+
+                <AppShell.Footer>
+                    <Footer />
+                </AppShell.Footer>
             </AppShell>
+
+            {/*<Footer />*/}
         </MantineProvider>
     );
 }

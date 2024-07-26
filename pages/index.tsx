@@ -1,4 +1,4 @@
-import { Box, Card, Center, Container, SimpleGrid, Space, Stack, Tabs } from '@mantine/core';
+import {Box, Card, Center, Container, SimpleGrid, Space, Stack, Tabs, Text} from '@mantine/core';
 import React from 'react';
 import { OfficialIdSkin } from '@/components/OfficialIdSkin/OfficialIdSkin';
 import tabsStyle from './tab.module.css';
@@ -7,10 +7,12 @@ import SkinServerSkin from '@/components/SkinServerSkin/SkinServerSkin';
 import UploadedSkin from '@/components/UploadedSkin/UploadedSkin';
 
 export default function HomePage() {
+    // @ts-ignore
+    // @ts-ignore
     return (
-        <Container maw={780}>
+        <Container maw={850}>
             <Space h="10vh" />
-            <Center maw={780}>
+            <Center maw={850}>
                 <SimpleGrid cols={{ base: 1, lg: 2 }} spacing={50}>
                     <Card shadow="sm" padding="lg" radius="lg" withBorder>
                         <Card.Section>
@@ -27,7 +29,7 @@ export default function HomePage() {
                                     </Tabs.Tab>
                                 </Tabs.List>
 
-                                <Box w={365} h={500}>
+                                <Box w={365}>
                                     <Space h={30} />
                                     <Tabs.Panel value="genuine_id">
                                         <OfficialIdSkin />
@@ -46,15 +48,30 @@ export default function HomePage() {
                         </Card.Section>
                     </Card>
 
-                    <Card>
-                        <Card.Section shadow="sm" padding="lg" radius="lg" withBorder>
-                            111
+                    <Card shadow="sm" padding="lg" radius="lg" withBorder>
+                        <Card.Section
+                            shadow="sm"
+                                      padding="lg"
+                                      radius="lg"
+                                      style={{backgroundColor: "rgba(83, 146, 239, 0.3)", height: 40}}
+                                      withBorder>
+                            <Center h={40}>
+                                <Text style={{color: "var(--mantine-color-blue-filled)", fontSize: 18, fontWeight: "bold"}}>
+                                    用户作品
+                                </Text>
+                            </Center>
                         </Card.Section>
+                        <Box>
+                            <Space h={30} />
+                            <SimpleGrid>
+
+                            </SimpleGrid>
+                        </Box>
                     </Card>
                 </SimpleGrid>
 
             </Center>
-            <Space h="13vh" />
+            <Space h="10vh" />
 
         </Container>
     );
