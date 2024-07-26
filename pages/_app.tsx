@@ -28,6 +28,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
                 <AppShell.Main>
                     <Component {...pageProps} />
+                    <Footer />
                 </AppShell.Main>
             </AppShell>
         </MantineProvider>

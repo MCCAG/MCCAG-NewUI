@@ -2,15 +2,16 @@ import { Box, Card, Center, Container, SimpleGrid, Space, Stack, Tabs } from '@m
 import React from 'react';
 import { OfficialIdSkin } from '@/components/OfficialIdSkin/OfficialIdSkin';
 import tabsStyle from './tab.module.css';
-import {Footer} from "@/components/Footer/Footer";
-import SkinServerSkin from "@/components/SkinServerSkin/SkinServerSkin";
-import UploadedSkin from "@/components/UploadedSkin/UploadedSkin";
+import { Footer } from '@/components/Footer/Footer';
+import SkinServerSkin from '@/components/SkinServerSkin/SkinServerSkin';
+import UploadedSkin from '@/components/UploadedSkin/UploadedSkin';
 
 export default function HomePage() {
     return (
-        <Container maw={690}>
-            <Center maw={690} h="calc(100vh - 60px - 97.59px)">
-                <SimpleGrid>
+        <Container maw={780}>
+            <Space h="10vh" />
+            <Center maw={780}>
+                <SimpleGrid cols={{ base: 1, lg: 2 }} spacing={50}>
                     <Card shadow="sm" padding="lg" radius="lg" withBorder>
                         <Card.Section>
                             <Tabs defaultValue="genuine_id" classNames={tabsStyle} variant="unstyled">
@@ -44,10 +45,16 @@ export default function HomePage() {
                             </Tabs>
                         </Card.Section>
                     </Card>
+
+                    <Card>
+                        <Card.Section shadow="sm" padding="lg" radius="lg" withBorder>
+                            111
+                        </Card.Section>
+                    </Card>
                 </SimpleGrid>
 
-                <Footer />
             </Center>
+            <Space h="13vh" />
 
         </Container>
     );
