@@ -7,11 +7,9 @@ import React from 'react';
 import { theme } from '@/theme';
 import { ColorSchemeToggle } from '@/components/ColorSchemeToggle/ColorSchemeToggle';
 import { Footer } from '@/components/Footer/Footer';
+import Header from '@/components/Header/Header';
 
-export default function App({
-                                Component,
-                                pageProps,
-                            }: AppProps) {
+export default function App({ Component, pageProps }: AppProps) {
     const [opened, { toggle }] = useDisclosure();
     return (
         <MantineProvider theme={theme}>
@@ -25,12 +23,7 @@ export default function App({
             </Head>
             <AppShell header={{ height: 60 }}>
                 <AppShell.Header>
-                    <Group h="100%" px="md">
-                        <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
-                        <Image src="/favicon.png" height={40} />
-                        <Title c="#5392EF">Minecraft CAG</Title>
-                        <ColorSchemeToggle />
-                    </Group>
+                    <Header />
                 </AppShell.Header>
 
                 <AppShell.Main>
